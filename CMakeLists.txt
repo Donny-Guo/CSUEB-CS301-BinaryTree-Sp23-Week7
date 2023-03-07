@@ -4,3 +4,5 @@ project(BinaryTreeIterative)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(BinaryTreeIterative Tree_usage_example.cpp TreeT.h)
+
+add_executable(Treedriver Tree_driver.cpp TreeT.h)

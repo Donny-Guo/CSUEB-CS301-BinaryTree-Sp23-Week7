@@ -13,17 +13,20 @@ using namespace std;
 enum Order {POST_ORDER, IN_ORDER, PRE_ORDER};
             //  0           1          2
 
+class EmptyTreeError{};
+
 template<class T>
 class TreeT {
 public:
     TreeT();
     ~TreeT();
 
-    TreeT& operator=(const TreeT& otherTree);
+    TreeT<T>& operator=(const TreeT& otherTree);
 
     void Add(T value);       // Add value to the tree
     void Remove(T value);    // Remove value from the tree
     bool Contains(T value);  // Determines if value is in the tree
+    void MakeEmpty(); // destroy the whole tree
 
     int Size();     // Number of values in the tree
 
@@ -42,7 +45,7 @@ private:
     int numNodes;
 
     // Used for de-constructor
-    void DestroyTree(Node* node);
+    void DestroyTree(Node*& node);
 
     // Used for Node removal
     void RemoveHelper(Node*& subtree, T value);

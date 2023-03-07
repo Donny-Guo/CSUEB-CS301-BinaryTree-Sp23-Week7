@@ -1,0 +1,23 @@
+Add 42
+GetLength
+Add 5
+Add 7
+Add 6
+Add 9
+PrintTree
+Add 1
+PrintTree
+Contains 4
+Contains 5
+Contains 9
+Contains 10
+IsFull
+Remove 5
+IsFull
+Remove 1
+Remove 6
+Remove 9
+PrintTree
+MakeEmpty
+PrintTree
+Quit
